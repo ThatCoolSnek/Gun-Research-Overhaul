@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Snek_Launchers</defName>
+		<label>Launchers</label>
+		<description>Create Various rocket and grande launchers</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Snek_FlameThrowers</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.1</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+    
+</Defs>
