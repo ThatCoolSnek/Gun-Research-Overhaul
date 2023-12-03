@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+
+		<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/prerequisites</xpath>
+		<value>
+			<prerequisites>
+				<li>Snek_MetallicCartridges</li>
+			</prerequisites>
+		</value>
+
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!-- moves gunpowder to new tab -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Gunpowder"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/hiddenPrerequisites</xpath>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Gunpowder"]/researchViewX</xpath>
+				<value>
+					<researchViewX>0.00</researchViewX>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Gunpowder"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!-- moves simple launchers to new tab + removes vanilla version-->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/prerequisites</xpath>
+			</li> 
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]</xpath>
+				<value>
+					<prerequisites>
+						<li>Gunsmithing</li>
+					</prerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewX</xpath>
+				<value>
+					<researchViewX>1</researchViewX>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.1</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+		<Operation Class="PatchOperationSequence">
+		<operations>
+		<!-- moves Advanced launchers to new tab -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]/prerequisites</xpath>
+			</li> 
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]</xpath>
+				<value>
+					<prerequisites>
+						<li>CE_Launchers</li>
+					</prerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>MultiAnalyzer</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]/researchViewX</xpath>
+				<value>
+					<researchViewX>2</researchViewX>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.1</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	
+	
+	<Operation Class="PatchOperationSequence">
+	<operations>
+		<!-- moves basic opto thingo to new tab + rename optics -->
+
+		<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]</xpath>
+		<value>
+			<tab>Snek_ResearchTab_Weapons</tab>
+		</value>
+	</li>
+
+	<li Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/prerequisites</xpath>
+	</li> 
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]</xpath>
+		<value>
+			<prerequisites>
+				<li>Snek_Optics</li>
+			</prerequisites>
+		</value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+				<li>Machining</li>
+			</hiddenPrerequisites>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/researchViewX</xpath>
+		<value>
+			<researchViewX>1</researchViewX>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/researchViewY</xpath>
+		<value>
+			<researchViewY>6.3</researchViewY>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Snek_Optics"]/label</xpath>
+		<value>
+			<label>Basic Optics</label>
+		</value>
+	</li>
+
+	</operations>
+	</Operation>
+	
+</Patch>
