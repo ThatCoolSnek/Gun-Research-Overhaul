@@ -6,7 +6,7 @@
 		<label>Double Action</label>
 		<description>An improved upon version of the single action mechanism allowing the hammer to
 			be cocked and release with a single trigger pull</description>
-		<baseCost>250</baseCost>
+		<baseCost>200</baseCost>
 		<prerequisites>
 			<li>Gunsmithing</li>
 		</prerequisites>
@@ -21,7 +21,7 @@
 		<label>Break Action</label>
 		<description>A type of action when the gun "breaks" in half and cartridges or shells are
 			loaded directly in the cylinder or barrel</description>
-		<baseCost>250</baseCost>
+		<baseCost>200</baseCost>
 		<prerequisites>
 			<li>Gunsmithing</li>
 		</prerequisites>
@@ -91,7 +91,7 @@
 		<defName>Snek_SelfLoad</defName>
 		<label>Self Loading and Recoil Operation</label>
 		<description>allows creation of firearms that use the recoil of the barrel to cycle the next round from a magazine</description>
-		<baseCost>250</baseCost>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Snek_PumpAction</li>
 			<li>Snek_LeverAction</li>
@@ -107,7 +107,7 @@
 		<defName>Snek_Shotguns</defName>
 		<label>Self Loading Shotguns</label>
 		<description>allows creation of Shotguns that use the recoil of the barrel to cycle shells</description>
-		<baseCost>250</baseCost>
+		<baseCost>200</baseCost>
 		<prerequisites>
 			<li>Snek_SelfLoad</li>
 		</prerequisites>
@@ -121,7 +121,7 @@
 		<defName>Snek_SubMachineGuns</defName>
 		<label>Sub Machine Guns</label>
 		<description>Allows creation of full auto firearms that use pistol calibers</description>
-		<baseCost>250</baseCost>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>BlowbackOperation</li>
 		</prerequisites>
@@ -136,7 +136,7 @@
 		<label>Selective Fire</label>
 		<description>Create Firearms using Intermidiate Cartridges that Have full auto and/or Burst
 			capabilities</description>
-		<baseCost>250</baseCost>
+		<baseCost>1000</baseCost>
 		<prerequisites>
 			<li>GasOperation</li>
 		</prerequisites>
@@ -164,7 +164,7 @@
 		<defName>Snek_Optics</defName>
 		<label>Optics</label>
 		<description>Create Basic Scopes for long range shooting</description>
-		<baseCost>250</baseCost>
+		<baseCost>200</baseCost>
 		<prerequisites>
 			<li>Smithing</li>
 		</prerequisites>
@@ -178,7 +178,7 @@
 		<defName>Snek_LMG</defName>
 		<label>Light Machine Guns</label>
 		<description>Heavy Machine guns that can fire for prolonged periods of time without overheating</description>
-		<baseCost>250</baseCost>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Snek_SelfLoad</li>
 		</prerequisites>
@@ -206,7 +206,7 @@
 		<defName>Snek_Polymer</defName>
 		<label>Polymer</label>
 		<description>learn the about the creation of polymer for use in firearms (kinda just a techblock for now, eventually(tm) will be patched to have actual polymer)</description>
-		<baseCost>250</baseCost>
+		<baseCost>100</baseCost>
 		<prerequisites>
 			<li>BiofuelRefining</li>
 		</prerequisites>
