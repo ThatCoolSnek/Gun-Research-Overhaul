@@ -118,7 +118,7 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>Snek_SubMachineGuns</defName>
+		<defName>Snek_SMG</defName>
 		<label>Sub Machine Guns</label>
 		<description>Allows creation of full auto firearms that use pistol calibers</description>
 		<baseCost>500</baseCost>

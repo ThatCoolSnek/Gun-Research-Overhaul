@@ -190,5 +190,58 @@
 
 	</operations>
 	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- moves advanced opto thingo to new tab-->
 	
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]</xpath>
+			<value>
+				<tab>Snek_ResearchTab_Weapons</tab>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]/prerequisites</xpath>
+		</li>
+
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]/hiddenPrerequisites</xpath>
+		</li>
+		
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]</xpath>
+			<value>
+				<hiddenPrerequisites>
+					<li>MicroelectronicsBasics</li>
+				</hiddenPrerequisites>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]</xpath>
+			<value>
+				<prerequisites>
+					<li>CE_SimpleNV</li>
+				</prerequisites>
+			</value>
+		</li>	
+
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]/researchViewX</xpath>
+			<value>
+				<researchViewX>2</researchViewX>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]/researchViewY</xpath>
+			<value>
+				<researchViewY>6.3</researchViewY>
+			</value>
+		</li>
+	
+		</operations>
+		</Operation>
 </Patch>

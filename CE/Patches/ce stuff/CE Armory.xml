@@ -52,7 +52,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="CE_Gun_AmericanOneEighty"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite Inherit="False">Snek_SubMachineGuns</researchPrerequisite>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
                     </value>
             </li>
             <!-- AVB 7.62 -->
@@ -234,14 +234,14 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="CE_Gun_MicroUzi"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite Inherit="False">Snek_SubMachineGuns</researchPrerequisite>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
                     </value>
             </li>
             <!-- Uzi -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="CE_Gun_Uzi"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite Inherit="False">Snek_SubMachineGuns</researchPrerequisite>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
                     </value>
             </li>
             <!-- Mini-14 -->
