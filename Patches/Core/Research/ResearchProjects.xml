@@ -116,7 +116,7 @@
 				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/prerequisites</xpath>
 				<value>
 					<prerequisites>
-						<li>Snek_SubMachineGuns</li>
+						<li>Snek_SMG</li>
 					</prerequisites>
 				</value>
 			</li>
