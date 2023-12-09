@@ -13,5 +13,15 @@
 	</description>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
+		<li>Harkon.GunNut.Chapter1</li>
+		<li>Harkon.GunNut.Chapter2</li>
+		<li>Harkon.GunNut.Community</li>
+		<li>Harkon.GunNut.DesertTech</li>
+		<li>Harkon.GunNut.FNSCAR</li>
+		<li>Harkon.GunNut.KRISSVector</li>
+		<li>Harkon.GunNut.KS23Shotgun</li>
+		<li>Harkon.GunNut.KelTec</li>
+		<li>Harkon.GunNut.SIGSauerNGSW</li>
+		<li>Harkon.GunNut.UkrainianFirearms</li>
 	</loadAfter>
 </ModMetaData>

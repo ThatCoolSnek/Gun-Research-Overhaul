@@ -230,7 +230,7 @@
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
-	<!--<ResearchProjectDef>
+	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore">
 		<defName>Snek_AdvancedGunFurniture</defName>
 		<label>Advanced Gun Furniture</label>
 		<description>add attachtments like foregrips</description>
@@ -242,6 +242,6 @@
 		<researchViewX>5</researchViewX>
 		<researchViewY>6.3</researchViewY>
 		<tab>Snek_ResearchTab_Weapons</tab>
-	</ResearchProjectDef>-->
+	</ResearchProjectDef>
 
 </Defs>
