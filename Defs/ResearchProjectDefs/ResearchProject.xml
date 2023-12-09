@@ -234,7 +234,7 @@
 		<defName>Snek_AdvancedGunFurniture</defName>
 		<label>Advanced Gun Furniture</label>
 		<description>add attachtments like foregrips</description>
-		<baseCost>250</baseCost>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Snek_Polymer</li>
 		</prerequisites>
