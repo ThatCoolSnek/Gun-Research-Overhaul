@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HRK] Gun Nut - Community Pack</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- KAC M110 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_SRTwentyFive"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_SRTwentyFive"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Optics</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Galil ACE -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_GalilACE"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_GalilACE"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Optics</li>
+                            <li>Snek_AdvancedGunFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- MG3 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_MGThree"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_MGThree"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M16A4 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M16AFour"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M16AFour"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Optics</li>
+                            <li>Snek_AdvancedGunFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M2HB -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M2HB"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M2HB"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- AA 12 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_AATwelve"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_AATwelve"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_Shotguns</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M202A1 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M202F"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M202F"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_Launchers</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M4 US -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M4US"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M4US"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Optics</li>
+                            <li>Snek_AdvancedGunFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M240B -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M240B"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M240B"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                            <li>Snek_Optics</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Pulse Rifle -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_PulseRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_Optics</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M56 Smartgun -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M56SG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                            <li>Snek_Optics</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- move caseless + rename -->
+            <li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_GunNut_Caseless"]/tab</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_GunNut_Caseless"]/hiddenPrerequisites</xpath>
+			</li>
+            <li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_GunNut_Caseless"]/prerequisites</xpath>
+				<value>
+					<li>PrecisionRifling</li>
+				</value>
+			</li>
+            <li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_GunNut_Caseless"]/researchViewX</xpath>
+				<value>
+					<researchViewX>10</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_GunNut_Caseless"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

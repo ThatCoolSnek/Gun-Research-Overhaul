@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!-- launchers -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">
+                    <li>Snek_Launchers</li>
+                </researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_SmokeLauncher"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">
+                    <li>Snek_Launchers</li>
+                </researchPrerequisite>
+            </value>
+    </Operation>
+    <!-- emp launcher -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Gun_EmpLauncher"]/recipeMaker/researchPrerequisite</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_EmpLauncher"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False"><li>MicroelectronicsBasics</li></researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_EmpLauncher"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites Inherit="False"><li>Snek_Launchers</li></researchPrerequisites>
+            </value>
+    </Operation>
+    
+</Patch>
