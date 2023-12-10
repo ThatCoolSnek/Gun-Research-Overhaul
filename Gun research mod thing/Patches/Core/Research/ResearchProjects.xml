@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- gunsmith -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/label</xpath>
+				<value>
+					<label>Single Action</label>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/description</xpath>
+				<value>
+					<description>Craft basic firearms that require manual manipulation of the hammer</description>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/researchViewX</xpath>
+				<value>
+					<researchViewX>2.00</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!-- Blowback -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/label</xpath>
+				<value>
+					<label>Direct Blowback</label>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/description</xpath>
+				<value>
+					<description>Create Firearms that rely on the blowback of the cartridge to cycle Rounds</description>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>Snek_SelfLoad</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/researchViewX</xpath>
+				<value>
+					<researchViewX>5</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+	<!-- Gas op -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/label</xpath>
+				<value>
+					<label>Gas Operation</label>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/description</xpath>
+				<value>
+					<description>Create Firearms that use the gas from fired bullets to operate the
+						bolt</description>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>Snek_SMG</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/researchViewX</xpath>
+				<value>
+					<researchViewX>7</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+	<!-- Precision Rifling -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/label</xpath>
+				<value>
+					<label>Modernisation</label>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>Snek_SelectiveFire</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/researchViewX</xpath>
+				<value>
+					<researchViewX>9</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>Snek_AmmoBelts</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/researchViewX</xpath>
+				<value>
+					<researchViewX>5</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.1</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>
