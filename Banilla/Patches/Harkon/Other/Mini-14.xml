@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ruger Mini</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Mini-30 -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_Ruger_14Mini"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

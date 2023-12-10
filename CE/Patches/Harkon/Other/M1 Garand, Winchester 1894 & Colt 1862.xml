@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>M1 Garand, Winchester 1894 &amp; Colt 1862</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Winchester 1894 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_1894Winchester"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_LeverAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- M1 Garand -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M1GarandB"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Colt 1862 (snub-nosed) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_1862Colt"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">CE_Gunpowder</researchPrerequisite>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>
