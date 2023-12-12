@@ -14,25 +14,6 @@
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>imranfish.xmlextensions</li>
-		<li>CETeam.CombatExtended</li>
-		<li>Harkon.GunNut.Chapter1</li>
-		<li>Harkon.GunNut.Chapter2</li>
-		<li>Harkon.GunNut.Community</li>
-		<li>Harkon.GunNut.DesertTech</li>
-		<li>Harkon.GunNut.FNSCAR</li>
-		<li>Harkon.GunNut.KRISSVector</li>
-		<li>Harkon.GunNut.KS23Shotgun</li>
-		<li>Harkon.GunNut.KelTec</li>
-		<li>Harkon.GunNut.SIGSauerNGSW</li>
-		<li>Harkon.GunNut.UkrainianFirearms</li>
-		<li>Harkon.Other.BarretMRADGeisseleURGI</li>
-		<li>Harkon.Other.ColtAnaconda</li>
-		<li>Harkon.Other.Glock20</li>
-		<li>Harkon.Other.AACHoneyBadger</li>
-		<li>Harkon.Other.SigMCX</li>
-		<li>Harkon.Other.GarandWinchesterColt</li>
-		<li>Harkon.Other.RugerMini</li>
-		<li>Harkon.STALKER.GaussRifle</li>
 	</loadAfter>
 	<loadBefore>
 		<li>CE.Kirp.RUGuns</li>
