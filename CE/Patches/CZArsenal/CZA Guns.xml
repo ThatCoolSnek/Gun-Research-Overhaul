@@ -778,6 +778,31 @@
                         </researchPrerequisites>
                     </value>
             </li>
+            <!-- Kord -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Serina_KordPortable"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>PrecisionRifling</li>
+                            <li>Snek_Optics</li>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- ASVK-M -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_ASVK-M"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Optics</li>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
         </operations>
         </match>
     </Operation>
