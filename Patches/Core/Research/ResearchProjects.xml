@@ -13,6 +13,12 @@
 					<label>Single Action</label>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/baseCost</xpath>
+				<value>
+					<baseCost>1000</baseCost>
+				</value>
+			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/description</xpath>
@@ -51,6 +57,12 @@
 				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/label</xpath>
 				<value>
 					<label>Direct Blowback</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/baseCost</xpath>
+				<value>
+					<baseCost>1000</baseCost>
 				</value>
 			</li>
 
@@ -103,6 +115,12 @@
 					<label>Gas Operation</label>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/baseCost</xpath>
+				<value>
+					<baseCost>2000</baseCost>
+				</value>
+			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/description</xpath>
@@ -152,6 +170,12 @@
 				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/label</xpath>
 				<value>
 					<label>Modernisation</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
 				</value>
 			</li>
 
@@ -206,6 +230,12 @@
 						techniques</description>
 				</value>
 			</li> -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/prerequisites</xpath>
