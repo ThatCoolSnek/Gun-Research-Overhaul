@@ -13,6 +13,8 @@
 	</description>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
+		<li>imranfish.xmlextensions</li>
+		<li>CETeam.CombatExtended</li>
 		<li>Harkon.GunNut.Chapter1</li>
 		<li>Harkon.GunNut.Chapter2</li>
 		<li>Harkon.GunNut.Community</li>
@@ -32,4 +34,7 @@
 		<li>Harkon.Other.RugerMini</li>
 		<li>Harkon.STALKER.GaussRifle</li>
 	</loadAfter>
+	<loadBefore>
+		<li>CE.Kirp.RUGuns</li>
+	</loadBefore>
 </ModMetaData>
