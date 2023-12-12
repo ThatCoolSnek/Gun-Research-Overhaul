@@ -34,7 +34,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_KRISSVectorGenII"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -51,7 +51,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -61,7 +61,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>

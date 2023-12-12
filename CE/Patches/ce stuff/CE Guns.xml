@@ -75,7 +75,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_SVD"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -90,7 +90,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_HecateTwo"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_HighCaliber</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
@@ -169,7 +169,63 @@
                             <li>Snek_FlameThrowers</li>
                         </researchPrerequisite>
                     </value>
-                </li>
+            </li>
+            <!-- Charge Pistol -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_ChargePistol"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge Shotgun -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_ChargeShotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge SMG -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_ChargeSMG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge Sniper -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_ChargeSniperRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge LMG -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_ChargeLMG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge AMR -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_ChargeAMR"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
         </operations>
         </match>
     </Operation>

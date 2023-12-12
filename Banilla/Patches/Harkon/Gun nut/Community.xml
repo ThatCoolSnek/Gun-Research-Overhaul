@@ -19,7 +19,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SRTwentyFive"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -35,7 +35,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_GalilACE"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -67,7 +67,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_M16AFour"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -131,7 +131,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_M4US"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -148,7 +148,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_AmmoBelts</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -158,7 +158,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -168,7 +168,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_AmmoBelts</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>

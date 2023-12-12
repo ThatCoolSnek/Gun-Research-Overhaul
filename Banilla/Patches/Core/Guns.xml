@@ -35,5 +35,12 @@
                 <researchPrerequisites Inherit="False"><li>Snek_Launchers</li></researchPrerequisites>
             </value>
     </Operation>
+    <!-- Charge Rifle -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites Inherit="False"><li>Snek_Lenses</li></researchPrerequisites>
+            </value>
+    </Operation>
     
 </Patch>

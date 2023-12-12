@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <!-- Single Action/Gunsmith-->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId> <!--String that XML Extensions can identify your mod with-->
+        <key>gunsmithcost</key> <!--Key to identify the setting (only used internally, invisible to user)-->
+        <defaultValue>750</defaultValue> <!--What you want the default value of the setting to be-->
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Gunsmithing"]/baseCost</xpath>
+                <value>
+                    <baseCost>{gunsmithcost}</baseCost> <!--Use the setting's value-->
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Double Action -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>doubleactioncost</key>
+        <defaultValue>250</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_DoubleAction"]/baseCost</xpath>
+                <value>
+                    <baseCost>{doubleactioncost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Break Action -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>breakactioncost</key>
+        <defaultValue>250</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_BreakAction"]/baseCost</xpath>
+                <value>
+                    <baseCost>{breakactioncost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Pump Action -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>pumpactioncost</key>
+        <defaultValue>750</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_PumpAction"]/baseCost</xpath>
+                <value>
+                    <baseCost>{pumpactioncost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Lever Action -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>leveractioncost</key>
+        <defaultValue>750</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_LeverAction"]/baseCost</xpath>
+                <value>
+                    <baseCost>{leveractioncost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Bolt Action -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>boltactioncost</key>
+        <defaultValue>750</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_BoltAction"]/baseCost</xpath>
+                <value>
+                    <baseCost>{boltactioncost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- High Caliber -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>highcalibercost</key>
+        <defaultValue>1000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_HighCaliber"]/baseCost</xpath>
+                <value>
+                    <baseCost>{highcalibercost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Self Loading and Recoil Operation -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>selfloadcost</key>
+        <defaultValue>1000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_SelfLoad"]/baseCost</xpath>
+                <value>
+                    <baseCost>{selfloadcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Self Loading Shotguns -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>shotgunscost</key>
+        <defaultValue>500</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_Shotguns"]/baseCost</xpath>
+                <value>
+                    <baseCost>{shotgunscost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Direct Blowback -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>blowbackcost</key>
+        <defaultValue>1000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="BlowbackOperation"]/baseCost</xpath>
+                <value>
+                    <baseCost>{blowbackcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Sub Machine Guns -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>smgcost</key>
+        <defaultValue>1000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_SMG"]/baseCost</xpath>
+                <value>
+                    <baseCost>{smgcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Gas Operation -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>gasopcost</key>
+        <defaultValue>2000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="GasOperation"]/baseCost</xpath>
+                <value>
+                    <baseCost>{gasopcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Selective Fire -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>selectfirecost</key>
+        <defaultValue>2000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_SelectiveFire"]/baseCost</xpath>
+                <value>
+                    <baseCost>{selectfirecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Modernisation -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>moderncost</key>
+        <defaultValue>3000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="PrecisionRifling"]/baseCost</xpath>
+                <value>
+                    <baseCost>{moderncost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Flame Throwers -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>flamecost</key>
+        <defaultValue>500</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_FlameThrowers"]/baseCost</xpath>
+                <value>
+                    <baseCost>{flamecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Light Machine Guns -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>lmgcost</key>
+        <defaultValue>500</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_LMG"]/baseCost</xpath>
+                <value>
+                    <baseCost>{lmgcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Ammunition Belts -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>ammobeltcost</key>
+        <defaultValue>1000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_AmmoBelts"]/baseCost</xpath>
+                <value>
+                    <baseCost>{ammobeltcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Multibarrel Weapons -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>multibarrelcost</key>
+        <defaultValue>3000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/baseCost</xpath>
+                <value>
+                    <baseCost>{multibarrelcost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Polymer -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>polymercost</key>
+        <defaultValue>150</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_Polymer"]/baseCost</xpath>
+                <value>
+                    <baseCost>{polymercost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Bakelite Framing -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>bakelitecost</key>
+        <defaultValue>500</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_Bakelite"]/baseCost</xpath>
+                <value>
+                    <baseCost>{bakelitecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Advanced Gun Furniture -->
+    <Operation Class="PatchOperationSequence">
+	<operations>
+    <li MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger" Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>advancedgunfurniturecost</key>
+        <defaultValue>750</defaultValue>
+        <apply>
+            <Operation MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger" Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_AdvancedGunFurniture"]/baseCost</xpath>
+                <value>
+                    <baseCost>{advancedgunfurniturecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </li>
+    </operations>
+    </Operation>
+    <!-- Lenses -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>lensescost</key>
+        <defaultValue>250</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_Lenses"]/baseCost</xpath>
+                <value>
+                    <baseCost>{lensescost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Simple Scopes -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>simplescopecost</key>
+        <defaultValue>500</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_SimpleScopes"]/baseCost</xpath>
+                <value>
+                    <baseCost>{simplescopecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Modern Scopes -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>modernscopecost</key>
+        <defaultValue>1000</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_ModernScopes"]/baseCost</xpath>
+                <value>
+                    <baseCost>{modernscopecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+</Patch>

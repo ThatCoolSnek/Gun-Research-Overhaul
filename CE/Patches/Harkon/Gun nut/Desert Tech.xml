@@ -97,7 +97,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_DTSRS"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -113,7 +113,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_DTHTI"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>

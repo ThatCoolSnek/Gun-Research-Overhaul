@@ -26,5 +26,12 @@
                 </researchPrerequisite>
             </value>
     </Operation>
+    <!-- Charge Rifle -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites Inherit="False"><li>CE_SimpleNV</li></researchPrerequisites>
+            </value>
+    </Operation>
 
 </Patch>

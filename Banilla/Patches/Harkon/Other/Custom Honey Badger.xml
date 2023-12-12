@@ -29,7 +29,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_AdvancedGunFurniture</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -39,7 +39,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_AdvancedGunFurniture</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>

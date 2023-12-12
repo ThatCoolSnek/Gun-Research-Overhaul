@@ -47,7 +47,7 @@
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
                             <li>Snek_HighCaliber</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>

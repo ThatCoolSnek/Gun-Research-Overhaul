@@ -153,7 +153,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]</xpath>
 		<value>
 			<prerequisites>
-				<li>Snek_Optics</li>
+				<li>Snek_SimpleScopes</li>
 			</prerequisites>
 		</value>
 	</li>
@@ -170,7 +170,7 @@
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/researchViewX</xpath>
 		<value>
-			<researchViewX>1</researchViewX>
+			<researchViewX>3</researchViewX>
 		</value>
 	</li>
 
@@ -178,13 +178,6 @@
 		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/researchViewY</xpath>
 		<value>
 			<researchViewY>6.3</researchViewY>
-		</value>
-	</li>
-
-	<li Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="Snek_Optics"]/label</xpath>
-		<value>
-			<label>Basic Optics</label>
 		</value>
 	</li>
 
@@ -231,7 +224,7 @@
 		<li Class="PatchOperationReplace">
 			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]/researchViewX</xpath>
 			<value>
-				<researchViewX>2</researchViewX>
+				<researchViewX>4</researchViewX>
 			</value>
 		</li>
 	

@@ -36,7 +36,7 @@
 		<label>Pump Action</label>
 		<description>A type of action where you manipulate a foreend and "pump" it back and forth to
 			to eject a spent casing and then load in a new one</description>
-		<baseCost>500</baseCost>
+		<baseCost>750</baseCost>
 		<prerequisites>
 			<li>Gunsmithing</li>
 		</prerequisites>
@@ -51,7 +51,7 @@
 		<label>Lever Action</label>
 		<description>A type of action where you manipulate the trigger guard forward and back like a
 			lever</description>
-		<baseCost>500</baseCost>
+		<baseCost>750</baseCost>
 		<prerequisites>
 			<li>Gunsmithing</li>
 		</prerequisites>
@@ -66,7 +66,7 @@
 		<label>Bolt Action</label>
 		<description>A type of action where you directly manipulate the bolt in order to cycle
 			rounds</description>
-		<baseCost>500</baseCost>
+		<baseCost>750</baseCost>
 		<prerequisites>
 			<li>Gunsmithing</li>
 		</prerequisites>
@@ -80,7 +80,7 @@
 		<defName>Snek_HighCaliber</defName>
 		<label>High Caliber</label>
 		<description>Learn how to handle The hogh Pressures of High Caliber Rounds</description>
-		<baseCost>500</baseCost>
+		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>4</researchViewX>
 		<researchViewY>0</researchViewY>
@@ -161,24 +161,10 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>Snek_Optics</defName>
-		<label>Optics</label>
-		<description>Create Basic Scopes for long range shooting</description>
-		<baseCost>500</baseCost>
-		<prerequisites>
-			<li>Smithing</li>
-		</prerequisites>
-		<techLevel>Industrial</techLevel>
-		<researchViewX>0</researchViewX>
-		<researchViewY>6.3</researchViewY>
-		<tab>Snek_ResearchTab_Weapons</tab>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
 		<defName>Snek_LMG</defName>
 		<label>Light Machine Guns</label>
 		<description>Heavy Machine guns that can fire for prolonged periods of time without overheating</description>
-		<baseCost>1000</baseCost>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Snek_SelfLoad</li>
 		</prerequisites>
@@ -192,7 +178,7 @@
 		<defName>Snek_AmmoBelts</defName>
 		<label>Ammunition Belts</label>
 		<description>connect a large amount of round together with cheap metal links in "belts"</description>
-		<baseCost>500</baseCost>
+		<baseCost>1000</baseCost>
 		<prerequisites>
 			<li>Snek_LMG</li>
 		</prerequisites>
@@ -211,8 +197,8 @@
 			<li>BiofuelRefining</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>3</researchViewX>
-		<researchViewY>6.3</researchViewY>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.6</researchViewY>
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
@@ -225,8 +211,8 @@
 			<li>Snek_Polymer</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>4</researchViewX>
-		<researchViewY>6.3</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5.6</researchViewY>
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
@@ -239,7 +225,49 @@
 			<li>Snek_Polymer</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_Lenses</defName>
+		<label>Lenses</label>
+		<description>Create Basic Lenses</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_SimpleScopes</defName>
+		<label>Simple Scopes</label>
+		<description>Create Basic Scopes for long range shooting</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Snek_Lenses</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_ModernScopes</defName>
+		<label>Modern Scopes</label>
+		<description>Create Modern Scopes for long range shooting</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Snek_SimpleScopes</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
 		<researchViewY>6.3</researchViewY>
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>

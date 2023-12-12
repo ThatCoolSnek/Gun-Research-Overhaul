@@ -82,7 +82,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SSR"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>

@@ -94,7 +94,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/recipeMaker</xpath>
             <value>
-                <researchPrerequisites Inherit="False"><li>Snek_Optics</li></researchPrerequisites>
+                <researchPrerequisites Inherit="False"><li>Snek_ModernScopes</li></researchPrerequisites>
             </value>
     </Operation>
 </Patch>

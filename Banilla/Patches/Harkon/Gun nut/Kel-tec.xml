@@ -13,6 +13,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_KelTecCP33P"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>Snek_Lenses</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -43,6 +44,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_KelTecKSG25S"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>Snek_Lenses</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -59,7 +61,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -75,7 +77,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -91,7 +93,6 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -106,7 +107,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_KelTecRFB_C"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>

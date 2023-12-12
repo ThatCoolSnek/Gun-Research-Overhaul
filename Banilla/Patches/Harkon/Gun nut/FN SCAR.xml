@@ -34,7 +34,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SCARL_C"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                             <li>Snek_Bakelite</li>
                             <li>Snek_Launchers</li>
                         </researchPrerequisites>
@@ -66,7 +66,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SCARH_C"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -82,7 +82,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SSR"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -92,7 +92,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_Charged_SCAR"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>

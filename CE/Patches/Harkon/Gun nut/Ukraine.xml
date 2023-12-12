@@ -78,7 +78,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SNIPEX_Alligator"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                             <li>Snek_HighCaliber</li>
                         </researchPrerequisites>

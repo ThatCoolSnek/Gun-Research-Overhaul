@@ -28,7 +28,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SIGM5SPEAR_C"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                             <li>Snek_AdvancedGunFurniture</li>
                         </researchPrerequisites>
                     </value>
@@ -54,7 +54,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SIGM250SAW_C"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_AdvancedGunFurniture</li>
                             <li>Snek_AmmoBelts</li>
                         </researchPrerequisites>
@@ -81,7 +81,7 @@
                 <xpath>Defs/ThingDef[defName="HRK_SIG338MG_C"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_Lenses</li>
                             <li>Snek_AdvancedGunFurniture</li>
                             <li>Snek_AmmoBelts</li>
                         </researchPrerequisites>
