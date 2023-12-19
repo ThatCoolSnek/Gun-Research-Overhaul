@@ -16,7 +16,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/baseCost</xpath>
 				<value>
-					<baseCost>750</baseCost>
+					<baseCost>500</baseCost>
 				</value>
 			</li>
 
@@ -175,7 +175,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/baseCost</xpath>
 				<value>
-					<baseCost>3000</baseCost>
+					<baseCost>3500</baseCost>
 				</value>
 			</li>
 

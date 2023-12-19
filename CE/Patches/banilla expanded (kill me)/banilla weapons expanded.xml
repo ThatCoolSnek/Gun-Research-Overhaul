@@ -167,6 +167,22 @@
                         </researchPrerequisites>
                     </value>
             </li>
+            <!-- Charge Rocket Launcher -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_AdvancedLaunchers</li>
+                            <li>CE_AdvancedNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
         </operations>
     </match>
 </Operation>
