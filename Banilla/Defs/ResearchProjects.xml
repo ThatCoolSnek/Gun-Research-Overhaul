@@ -8,7 +8,7 @@
 		<description>Create Various rocket and grande launchers</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
-			<li>Snek_FlameThrowers</li>
+			<li>Gunsmithing</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1</researchViewX>
