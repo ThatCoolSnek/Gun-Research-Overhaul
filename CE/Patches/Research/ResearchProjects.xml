@@ -45,6 +45,37 @@
 
 	<Operation Class="PatchOperationSequence">
 		<operations>
+		<!-- moves gunpowder to new tab -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/prerequisites</xpath>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/researchViewX</xpath>
+				<value>
+					<researchViewX>4</researchViewX>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.1</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
 		<!-- moves simple launchers to new tab + removes vanilla version-->
 
 			<li Class="PatchOperationAdd">

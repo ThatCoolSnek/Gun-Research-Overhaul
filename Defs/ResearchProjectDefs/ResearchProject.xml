@@ -91,7 +91,7 @@
 		<defName>Snek_SelfLoad</defName>
 		<label>Self Loading and Recoil Operation</label>
 		<description>allows creation of firearms that use the recoil of the barrel to cycle the next round from a magazine</description>
-		<baseCost>1000</baseCost>
+		<baseCost>750</baseCost>
 		<prerequisites>
 			<li>Snek_PumpAction</li>
 			<li>Snek_LeverAction</li>
@@ -216,7 +216,7 @@
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger">
+	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger,RH2.Faction.Task.Force.141">
 		<defName>Snek_AdvancedGunFurniture</defName>
 		<label>Advanced Gun Furniture</label>
 		<description>add attachtments like foregrips</description>
@@ -229,7 +229,7 @@
 		<researchViewY>5.6</researchViewY>
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
-
+	
 	<ResearchProjectDef>
 		<defName>Snek_Lenses</defName>
 		<label>Lenses</label>

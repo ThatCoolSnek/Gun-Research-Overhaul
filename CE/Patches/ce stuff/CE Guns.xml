@@ -203,6 +203,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>CE_SimpleNV</li>
+                            <li>Snek_ModernScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -222,6 +223,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>CE_SimpleNV</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_HighCaliber</li>
                         </researchPrerequisites>
                     </value>

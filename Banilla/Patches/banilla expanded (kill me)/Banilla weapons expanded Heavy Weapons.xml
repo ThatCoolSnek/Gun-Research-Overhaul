@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Heavy Weapons</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Autocannon -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_Autocannon"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HeavyWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Handheld Mortar -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_HandheldMortar"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HeavyWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Heavy Flamer -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_HeavyFlamer"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_FlameThrowers</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_HeavyFlamer"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HeavyWeapons</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Swarm Missile Launcher -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_SwarmMissileLauncher"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HeavyWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Uranium slug rifle -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_UraniumSlugRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HeavyWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>
