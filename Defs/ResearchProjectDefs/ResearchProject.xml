@@ -272,4 +272,18 @@
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr">
+		<defName>Snek_Caseless</defName>
+		<label>Caseless Ammunition</label>
+		<description>Craft Weapons using Caseless Ammuniton which is lighter and cheaper</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>PrecisionRifling</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>9</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
 </Defs>

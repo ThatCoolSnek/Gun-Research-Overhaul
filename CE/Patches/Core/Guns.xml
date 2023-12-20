@@ -2,28 +2,22 @@
 
 <Patch>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_Revolver"]/recipeMaker</xpath>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Revolver"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-                <researchPrerequisite Inherit="False">
-                    <li>Snek_DoubleAction</li>
-                </researchPrerequisite>
+                <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
             </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/recipeMaker</xpath>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-                <researchPrerequisite Inherit="False">
-                    <li>Snek_BoltAction</li>
-                </researchPrerequisite>
+                <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
             </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/recipeMaker</xpath>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-                <researchPrerequisite Inherit="False">
-                    <li>Snek_PumpAction</li>
-                </researchPrerequisite>
+                <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
             </value>
     </Operation>
     <!-- Charge Rifle -->

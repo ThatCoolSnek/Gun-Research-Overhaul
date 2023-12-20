@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
-
-    <!-- make guns be in new researches woooooo (i hate vanilla) -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_Revolver"]/recipeMaker</xpath>
-            <value>
-                <researchPrerequisite Inherit="False">
-                    <li>Snek_DoubleAction</li>
-                </researchPrerequisite>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/recipeMaker</xpath>
-            <value>
-                <researchPrerequisite Inherit="False">
-                    <li>Snek_BoltAction</li>
-                </researchPrerequisite>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/recipeMaker</xpath>
-            <value>
-                <researchPrerequisite Inherit="False">
-                    <li>Snek_PumpAction</li>
-                </researchPrerequisite>
-            </value>
-    </Operation>
     
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/recipeMaker/researchPrerequisite</xpath>

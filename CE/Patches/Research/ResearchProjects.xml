@@ -22,10 +22,6 @@
 					<tab>Snek_ResearchTab_Weapons</tab>
 				</value>
 			</li>
-
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/hiddenPrerequisites</xpath>
-			</li>
 	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="CE_Gunpowder"]/researchViewX</xpath>
@@ -40,6 +36,11 @@
 					<researchViewY>0.7</researchViewY>
 				</value>
 			</li>
+
+			<!--<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/hiddenPrerequisites</xpath>
+			</li>-->
+
 		</operations>
 	</Operation>
 
