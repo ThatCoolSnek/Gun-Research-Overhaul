@@ -270,4 +270,74 @@
 		</operations>
 	</Operation>
 
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li>-->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/hiddenPrerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/prerequisites</xpath>
+				<value>
+						<li>PrecisionRifling</li>
+				</value>
+			</li>
+
+			<li MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr" Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/prerequisites</xpath>
+				<value>
+						<li>Snek_Caseless</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/researchViewX</xpath>
+				<value>
+					<researchViewX>10</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.6</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>HK Armory - Revengeance!</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+
+		</operations>
+    </match>
+</Operation>
+
 </Patch>

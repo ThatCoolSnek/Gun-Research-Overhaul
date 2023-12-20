@@ -256,6 +256,44 @@
                         </researchPrerequisites>
                     </value>
             </li>
+            <!-- patch the ammo to my research -->
+            <!-- 4.73x33 -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeAmmo_473x33mmCaseless_FMJ"]</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeAmmo_473x33mmCaseless_AP"]</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeAmmo_473x33mmCaseless_HP"]</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeAmmo_473x33mmCaseless_Incendiary"]</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeAmmo_473x33mmCaseless_HE"]</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeAmmo_473x33mmCaseless_Sabot"]</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
+                    </value>
+            </li>
         </operations>
     </match>
 </Operation>
