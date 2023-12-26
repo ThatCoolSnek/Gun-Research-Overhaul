@@ -503,12 +503,12 @@
             </li>
             <!-- SV98M -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SV98b"]/recipeMaker</xpath>
+                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SV98b"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>PrecisionRifling</li>
                             <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
-                            <li>PrecisionRifling</li>
                             <li>CE_AdvancedNV</li>
                         </researchPrerequisites>
                     </value>
@@ -796,6 +796,28 @@
                             <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                             <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- DShK -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_DShK_Aug"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Maxim -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Maxim_Aug"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>BlowbackOperation</li>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
                         </researchPrerequisites>
                     </value>
             </li>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- charge thumper -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_Launchers</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Hunting Rifle -->
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

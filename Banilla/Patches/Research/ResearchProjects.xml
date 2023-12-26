@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Autocannon turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/prerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+				<value>
+					<prerequisites>
+						<li>GunTurrets</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>GasOperation</li>
+						<li>MicroelectronicsBasics</li>
+						<li>Snek_HighCaliber</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/researchViewX</xpath>
+				<value>
+					<researchViewX>2</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<!-- Uranium Slug turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/prerequisites</xpath>
+			</li>-->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>HeavyTurrets</li>
+						<li>MultiAnalyzer</li>
+					</prerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/hiddenPrerequisites</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>PrecisionRifling</li>
+					</hiddenPrerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/researchViewX</xpath>
+				<value>
+					<researchViewX>3</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+	<!-- Rocket Swarm turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/prerequisites</xpath>
+			</li>-->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>HeavyTurrets</li>
+						<li>MultiAnalyzer</li>
+					</prerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/hiddenPrerequisites</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>PrecisionRifling</li>
+					</hiddenPrerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/researchViewX</xpath>
+				<value>
+					<researchViewX>4</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>

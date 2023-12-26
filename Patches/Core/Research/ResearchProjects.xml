@@ -329,15 +329,69 @@
 		</operations>
 	</Operation>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>HK Armory - Revengeance!</li>
-		</mods>
-        <match Class="PatchOperationSequence">
-        <operations>
+	<!-- Gun turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/prerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+				<value>
+					<prerequisites>
+						<li>Snek_OpticalTargeting</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>BlowbackOperation</li>
+						<li>Snek_AmmoBelts</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/researchViewX</xpath>
+				<value>
+					<researchViewX>1</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
 
 		</operations>
-    </match>
-</Operation>
+	</Operation>
 
 </Patch>

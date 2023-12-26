@@ -286,4 +286,19 @@
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<defName>Snek_OpticalTargeting</defName>
+		<label>Optical Targeting</label>
+		<description>Learn how to make optical targeting systems for use in automated weaponry</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Snek_Lenses</li>
+			<li>Electricity</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
 </Defs>
