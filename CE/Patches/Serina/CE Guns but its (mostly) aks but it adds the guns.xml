@@ -65,7 +65,7 @@
             </li>
             <!-- KSVK 12.7 -->
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="ak_PSL"]/recipeMaker</xpath>
+                <xpath>Defs/ThingDef[defName="ak_KSVK_127_gun"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Snek_ModernScopes</li>
