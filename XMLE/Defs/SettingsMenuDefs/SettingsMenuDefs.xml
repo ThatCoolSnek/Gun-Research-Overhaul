@@ -6,11 +6,19 @@
         <modId>Snek.GunResearchOverhaul</modId> <!--MUST be the same as the one entered earlier-->    
         <label>Gun Research Overhaul</label> <!-- This is what displays as your mod's name-->    
         <settings> <!--This is where you define what settings are in the settings menu-->
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Single Action/Gunsmith</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Single Action/Gunsmith-->
             <li Class="XmlExtensions.Setting.Textbox"> <!--Can use any class from XmlExtensions.Setting-->
                 <key>gunsmithcost</key>
                 <label>Single Action research cost</label>
-                <defaultValue>750</defaultValue> <!--Can generally skip, but good to include again to avoid possible bugs-->
+                <defaultValue>500</defaultValue> <!--Can generally skip, but good to include again to avoid possible bugs-->
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Double Action</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Double Action -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -18,11 +26,19 @@
                 <label>Double Action research cost</label>
                 <defaultValue>250</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Break Action</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Break Action -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>breakactioncost</key>
                 <label>Break Action research cost</label>
                 <defaultValue>250</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Pump Action</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Pump Action -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -30,11 +46,19 @@
                 <label>Pump Action research cost</label>
                 <defaultValue>750</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Lever Action</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Lever Action -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>leveractioncost</key>
                 <label>Lever Action research cost</label>
                 <defaultValue>750</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Bolt Action</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Bolt Action -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -42,17 +66,29 @@
                 <label>Bolt Action research cost</label>
                 <defaultValue>750</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>High Caliber</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- High Caliber -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>highcalibercost</key>
                 <label>High Caliber research cost</label>
                 <defaultValue>1000</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Self Loading and Recoil Operation</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Self Loading and Recoil Operation -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>selfloadcost</key>
                 <label>Self Loading and Recoil Operation research cost</label>
-                <defaultValue>1000</defaultValue>
+                <defaultValue>750</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Self Loading Shotguns</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Self Loading Shotguns -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -60,11 +96,19 @@
                 <label>Self Loading Shotguns research cost</label>
                 <defaultValue>500</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Direct Blowback</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Direct Blowback -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>blowbackcost</key>
                 <label>Direct Blowback research cost</label>
                 <defaultValue>1000</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Sub Machine Guns</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Sub Machine Guns -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -72,11 +116,19 @@
                 <label>Sub Machine Guns research cost</label>
                 <defaultValue>1000</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Gas Operation</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Gas Operation -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>gasopcost</key>
                 <label>Gas Operation research cost</label>
                 <defaultValue>2000</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Selective Fire</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Selective Fire -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -84,11 +136,29 @@
                 <label>Selective Fire research cost</label>
                 <defaultValue>2000</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Modernisation</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Modernisation -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>moderncost</key>
                 <label>Modernisation research cost</label>
-                <defaultValue>3000</defaultValue>
+                <defaultValue>3500</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Flame Throwers</text>
+                <anchor>Middle</anchor>
+            </li>
+            <!-- Flame Throwers -->
+            <li Class="XmlExtensions.Setting.Textbox">
+                <key>flamecost</key>
+                <label>Flame Throwers research cost</label>
+                <defaultValue>500</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Light Machine Guns</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Light Machine Guns -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -96,11 +166,19 @@
                 <label>Light Machine Gun research cost</label>
                 <defaultValue>500</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Ammunition Belts</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Ammunition Belts -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>ammobeltcost</key>
                 <label>Ammunition Belts research cost</label>
                 <defaultValue>1000</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Multibarrel Weapons</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Multibarrel Weapons -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -108,11 +186,19 @@
                 <label>Multibarrel Weapons research cost</label>
                 <defaultValue>3000</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Polymer</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Polymer -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>polymercost</key>
                 <label>Polymer research cost</label>
                 <defaultValue>150</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Bakelite Framing</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Bakelite Framing -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -120,11 +206,19 @@
                 <label>Bakelite Framing research cost</label>
                 <defaultValue>500</defaultValue>
             </li>
+            <li MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger" Class="XmlExtensions.Setting.Text">
+                <text>Advanced Gun Furniture</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Advanced Gun Furniture -->
             <li MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger" Class="XmlExtensions.Setting.Textbox"> <!--Can use any class from XmlExtensions.Setting-->
                 <key>advancedgunfurniturecost</key>
                 <label>Advanced Gun Furniture research cost</label>
                 <defaultValue>750</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Lenses</text>
+                <anchor>Middle</anchor>
             </li>
             <!-- Lenses -->
             <li Class="XmlExtensions.Setting.Textbox">
@@ -132,17 +226,45 @@
                 <label>Lenses research cost</label>
                 <defaultValue>250</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Simple Scopes</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Simple Scopes -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>simplescopecost</key>
                 <label>Simple Scopes research cost</label>
                 <defaultValue>500</defaultValue>
             </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Modern Scopes</text>
+                <anchor>Middle</anchor>
+            </li>
             <!-- Modern Scopes -->
             <li Class="XmlExtensions.Setting.Textbox">
                 <key>modernscopecost</key>
                 <label>Modern Scopes research cost</label>
                 <defaultValue>1000</defaultValue>
+            </li>
+            <li MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr" Class="XmlExtensions.Setting.Text">
+                <text>Caseless Ammunition</text>
+                <anchor>Middle</anchor>
+            </li>
+            <!-- Caseless Ammunition -->
+            <li MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr" Class="XmlExtensions.Setting.Textbox">
+                <key>caselesscost</key>
+                <label>Caseless Ammunition research cost</label>
+                <defaultValue>1000</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Optical Targeting</text>
+                <anchor>Middle</anchor>
+            </li>
+            <!-- Optical Targeting -->
+            <li Class="XmlExtensions.Setting.Textbox">
+                <key>opticaltargetingcost</key>
+                <label>Optical Targeting</label>
+                <defaultValue>500</defaultValue>
             </li>
         </settings>
     </XmlExtensions.SettingsMenuDef>

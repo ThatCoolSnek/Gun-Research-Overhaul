@@ -10,7 +10,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/label</xpath>
 				<value>
-					<label>Single Action</label>
+					<label>Single action</label>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -23,7 +23,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/description</xpath>
 				<value>
-					<description>Craft basic firearms that require manual manipulation of the hammer</description>
+					<description>Create basic firearms that require manual manipulation of the hammer</description>
 				</value>
 			</li>
 			
@@ -56,7 +56,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/label</xpath>
 				<value>
-					<label>Direct Blowback</label>
+					<label>Direct blowback</label>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -112,7 +112,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/label</xpath>
 				<value>
-					<label>Gas Operation</label>
+					<label>Gas operation</label>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -125,8 +125,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/description</xpath>
 				<value>
-					<description>Create Firearms that use the gas from fired bullets to operate the
-						bolt</description>
+					<description>Create firearms that use the gas from fired bullets to push a piston which in turns operates the bolt and cycles a round</description>
 				</value>
 			</li>
 
@@ -182,8 +181,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/description</xpath>
 				<value>
-					<description>Create Firearms that are more advanced using more precise
-						techniques</description>
+					<description>Create firearms that are more advanced using more precise techniques and materials</description>
 				</value>
 			</li>
 

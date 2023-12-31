@@ -15,6 +15,9 @@
 		<li>Ludeon.RimWorld</li>
 		<li>CETeam.CombatExtended</li>
 		<li>imranfish.xmlextensions</li>
+		<li>PeteTimesSix.ResearchReinvented.SteppingStones</li>
+		<li>Aoba.Fortress.Industrial</li>
+		<li>OskarPotocki.VFE.Insectoid</li>
 	</loadAfter>
 	<loadBefore>
 		<li>CE.Kirp.RUGuns</li>

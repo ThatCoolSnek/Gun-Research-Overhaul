@@ -5,7 +5,7 @@
     <Operation Class="XmlExtensions.UseSetting">
         <modId>Snek.GunResearchOverhaul</modId> <!--String that XML Extensions can identify your mod with-->
         <key>gunsmithcost</key> <!--Key to identify the setting (only used internally, invisible to user)-->
-        <defaultValue>750</defaultValue> <!--What you want the default value of the setting to be-->
+        <defaultValue>500</defaultValue> <!--What you want the default value of the setting to be-->
         <apply>
             <Operation Class="PatchOperationReplace">
             <xpath>/Defs/ResearchProjectDef[defName="Gunsmithing"]/baseCost</xpath>
@@ -103,7 +103,7 @@
     <Operation Class="XmlExtensions.UseSetting">
         <modId>Snek.GunResearchOverhaul</modId>
         <key>selfloadcost</key>
-        <defaultValue>1000</defaultValue>
+        <defaultValue>750</defaultValue>
         <apply>
             <Operation Class="PatchOperationReplace">
             <xpath>/Defs/ResearchProjectDef[defName="Snek_SelfLoad"]/baseCost</xpath>
@@ -187,7 +187,7 @@
     <Operation Class="XmlExtensions.UseSetting">
         <modId>Snek.GunResearchOverhaul</modId>
         <key>moderncost</key>
-        <defaultValue>3000</defaultValue>
+        <defaultValue>3500</defaultValue>
         <apply>
             <Operation Class="PatchOperationReplace">
             <xpath>/Defs/ResearchProjectDef[defName="PrecisionRifling"]/baseCost</xpath>
@@ -337,6 +337,38 @@
             <xpath>/Defs/ResearchProjectDef[defName="Snek_ModernScopes"]/baseCost</xpath>
                 <value>
                     <baseCost>{modernscopecost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Caseless Ammunition -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+        <li MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr" Class="XmlExtensions.UseSetting">
+            <modId>Snek.GunResearchOverhaul</modId>
+            <key>caselesscost</key>
+            <defaultValue>1000</defaultValue>
+            <apply>
+                <Operation MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr" Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="Snek_Caseless"]/baseCost</xpath>
+                    <value>
+                        <baseCost>{caselesscost}</baseCost>
+                    </value>
+                </Operation>
+            </apply>
+        </li>
+        </operations>
+        </Operation>
+    <!-- Optical Targeting -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Snek.GunResearchOverhaul</modId>
+        <key>opticaltargetingcost</key>
+        <defaultValue>500</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="Snek_OpticalTargeting"]/baseCost</xpath>
+                <value>
+                    <baseCost>{opticaltargetingcost}</baseCost>
                 </value>
             </Operation>
         </apply>
