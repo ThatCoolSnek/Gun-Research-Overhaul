@@ -5,5 +5,6 @@
 		<li>/</li>
 		<li IfModActive="CETeam.CombatExtended">CE</li>
 		<li IfModNotActive="CETeam.CombatExtended">Banilla</li>
+		<li IfModActive="imranfish.xmlextensions">XMLE</li>
 	</v1.4>
 </loadFolders>

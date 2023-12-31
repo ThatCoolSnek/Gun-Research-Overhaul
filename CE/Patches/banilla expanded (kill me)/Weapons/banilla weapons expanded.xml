@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Hand Cannon (Chiappa Rhino) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_HandCannon"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Sawed-off Shotgun -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_SawedOffShotgun"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BreakAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Grenade Launcher (milkor MGL) -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_GrenadeLauncher"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_DoubleAction</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Flamethrower (M67) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_Flamethrower"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_FlameThrowers</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_Flamethrower"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Semi-Automatic Rifle (M14) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_SemiAutomaticRifle"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Lever-Action Rifle (Winchester 1873)-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_LeverActionRifle"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_LeverAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Light SMG (Uzi) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_LightSMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- SMG (MP5K) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_LightSMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- HMG (M249 SAW) -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_HMG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Service Rifle (AKM) I absolutely HATE this fucking gun. oscar is a fucking sped how does 762 soviet do less fucking damage then 556 u fat fuck -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ServiceRifle"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Battle Rifle (Scar H) -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_BattleRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Carbine (Steyr AUG) -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_Carbine"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Marksman Rifle (SVD) -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_MarksmanRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_SimpleScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Anti-Materiel Rifle (M82) -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_AntiMaterialRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge Shotgun -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeShotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Shotguns</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge LMG -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeLMG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge Sniper -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeSniperRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_ModernScopes</li>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge Minigun -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeMinigun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                            <li>CE_TurretHeavyWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Charge Rocket Launcher -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_AdvancedLaunchers</li>
+                            <li>CE_AdvancedNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

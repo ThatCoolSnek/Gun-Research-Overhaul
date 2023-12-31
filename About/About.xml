@@ -13,5 +13,10 @@
 	</description>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
+		<li>CETeam.CombatExtended</li>
+		<li>imranfish.xmlextensions</li>
 	</loadAfter>
+	<loadBefore>
+		<li>CE.Kirp.RUGuns</li>
+	</loadBefore>
 </ModMetaData>

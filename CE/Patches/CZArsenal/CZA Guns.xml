@@ -342,7 +342,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_AmmoBelts</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -352,7 +352,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -361,7 +361,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Medved"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -376,7 +376,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_TOZ55a"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -406,7 +406,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_MonteCarlo"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -446,7 +446,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_AK104b"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -465,7 +465,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SVTPU"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -481,7 +481,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SVU"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -497,18 +497,18 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SV98a"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
             <!-- SV98M -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SV98b"]/recipeMaker</xpath>
+                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SV98b"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
-                            <li>Snek_Bakelite</li>
                             <li>PrecisionRifling</li>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_Bakelite</li>
                             <li>CE_AdvancedNV</li>
                         </researchPrerequisites>
                     </value>
@@ -518,7 +518,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_SVD"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -558,16 +558,12 @@
             </li>
             <!-- AK-74 GP-25 -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74GL"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
-                    </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74GL"]/recipeMaker</xpath>
+                <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74GL"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>Snek_SelectiveFire</li>
                             <li>Snek_Bakelite</li>
+                            <li>CE_Launchers</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -693,7 +689,7 @@
                             <li>PrecisionRifling</li>
                             <li>CE_Launchers</li>
                             <li>Snek_Bakelite</li>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -757,7 +753,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_MosinPU"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -773,8 +769,55 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_Krip_Archangel"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Kord -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Serina_KordPortable"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>PrecisionRifling</li>
+                            <li>Snek_SimpleScopes</li>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- ASVK-M -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_ASVK-M"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- DShK -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_DShK_Aug"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Maxim -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Maxim_Aug"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>BlowbackOperation</li>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
                         </researchPrerequisites>
                     </value>
             </li>

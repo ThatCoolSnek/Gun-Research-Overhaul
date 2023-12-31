@@ -2,6 +2,32 @@
 
 <Patch>
 
+    <!-- make guns be in new researches woooooo (i hate vanilla) -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Revolver"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">
+                    <li>Snek_DoubleAction</li>
+                </researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">
+                    <li>Snek_BoltAction</li>
+                </researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">
+                    <li>Snek_PumpAction</li>
+                </researchPrerequisite>
+            </value>
+    </Operation>
+
     <!-- launchers -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/recipeMaker</xpath>
@@ -33,6 +59,13 @@
         <xpath>Defs/ThingDef[defName="Gun_EmpLauncher"]/recipeMaker</xpath>
             <value>
                 <researchPrerequisites Inherit="False"><li>Snek_Launchers</li></researchPrerequisites>
+            </value>
+    </Operation>
+    <!-- Charge Rifle -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites Inherit="False"><li>Snek_Lenses</li></researchPrerequisites>
             </value>
     </Operation>
     

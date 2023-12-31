@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
-
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Combat Extended Armory</li>
@@ -120,7 +119,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_BigBoy"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -199,7 +198,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_M1903Springfield"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -249,7 +248,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_MiniFourteen"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_SimpleScopes</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -285,7 +284,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_SRTweintyFive"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -295,7 +294,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_SRS"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
@@ -305,7 +304,7 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_TacFifty"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>Snek_Optics</li>
+                            <li>Snek_ModernScopes</li>
                             <li>Snek_Bakelite</li>
                             <li>Snek_HighCaliber</li>
                         </researchPrerequisites>
@@ -334,6 +333,72 @@
                 <xpath>Defs/ThingDef[defName="CE_Gun_WinchesterEightySix"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisite Inherit="False">Snek_LeverAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!--===== Emplacements =====-->
+            <!-- M1919 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Turret_M1919Browning"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M2 Browning machine gun -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Turret_M2HB"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Mk 19 grenade launcher -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Turret_MkNineteenGL"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                            <li>CE_Launchers</li>
+                            <li>BlowbackOperation</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- PKM -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Turret_PKM"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- SPG-9 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Turret_SPGNine"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>CE_Launchers</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Vickers -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Turret_Vickers"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_TurretHeavyWeapons</li>
+                            <li>Snek_AmmoBelts</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
                     </value>
             </li>
         </operations>

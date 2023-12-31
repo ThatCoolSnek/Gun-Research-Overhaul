@@ -13,6 +13,12 @@
 					<label>Single Action</label>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/baseCost</xpath>
+				<value>
+					<baseCost>500</baseCost>
+				</value>
+			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/description</xpath>
@@ -51,6 +57,12 @@
 				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/label</xpath>
 				<value>
 					<label>Direct Blowback</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/baseCost</xpath>
+				<value>
+					<baseCost>1000</baseCost>
 				</value>
 			</li>
 
@@ -103,6 +115,12 @@
 					<label>Gas Operation</label>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/baseCost</xpath>
+				<value>
+					<baseCost>2000</baseCost>
+				</value>
+			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="GasOperation"]/description</xpath>
@@ -152,6 +170,12 @@
 				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/label</xpath>
 				<value>
 					<label>Modernisation</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/baseCost</xpath>
+				<value>
+					<baseCost>3500</baseCost>
 				</value>
 			</li>
 
@@ -206,6 +230,12 @@
 						techniques</description>
 				</value>
 			</li> -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/prerequisites</xpath>
@@ -234,6 +264,130 @@
 				<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/researchViewY</xpath>
 				<value>
 					<researchViewY>2.1</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li>-->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/hiddenPrerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/prerequisites</xpath>
+				<value>
+						<li>PrecisionRifling</li>
+				</value>
+			</li>
+
+			<li MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr" Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/prerequisites</xpath>
+				<value>
+						<li>Snek_Caseless</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/researchViewX</xpath>
+				<value>
+					<researchViewX>10</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.6</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<!-- Gun turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/prerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+				<value>
+					<prerequisites>
+						<li>Snek_OpticalTargeting</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>BlowbackOperation</li>
+						<li>Snek_AmmoBelts</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/researchViewX</xpath>
+				<value>
+					<researchViewX>1</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
 				</value>
 			</li>
 

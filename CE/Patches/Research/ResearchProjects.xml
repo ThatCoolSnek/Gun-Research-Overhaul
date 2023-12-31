@@ -22,10 +22,6 @@
 					<tab>Snek_ResearchTab_Weapons</tab>
 				</value>
 			</li>
-
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/hiddenPrerequisites</xpath>
-			</li>
 	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="CE_Gunpowder"]/researchViewX</xpath>
@@ -38,6 +34,42 @@
 				<xpath>Defs/ResearchProjectDef[defName="CE_Gunpowder"]/researchViewY</xpath>
 				<value>
 					<researchViewY>0.7</researchViewY>
+				</value>
+			</li>
+
+			<!--<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/hiddenPrerequisites</xpath>
+			</li>-->
+
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!-- moves gunpowder to new tab -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/prerequisites</xpath>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/researchViewX</xpath>
+				<value>
+					<researchViewX>4</researchViewX>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.1</researchViewY>
 				</value>
 			</li>
 		</operations>
@@ -54,18 +86,18 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationRemove">
+			<!--<li Class="PatchOperationRemove">
 				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/prerequisites</xpath>
 			</li> 
 	
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]</xpath>
 				<value>
-					<prerequisites>
-						<li>Gunsmithing</li>
-					</prerequisites>
+					<hiddenPrerequisites>
+						<li>GasOperation</li>
+					</hiddenPrerequisites>
 				</value>
-			</li>
+			</li>-->
 	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewX</xpath>
@@ -153,7 +185,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]</xpath>
 		<value>
 			<prerequisites>
-				<li>Snek_Optics</li>
+				<li>Snek_SimpleScopes</li>
 			</prerequisites>
 		</value>
 	</li>
@@ -170,7 +202,7 @@
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/researchViewX</xpath>
 		<value>
-			<researchViewX>1</researchViewX>
+			<researchViewX>3</researchViewX>
 		</value>
 	</li>
 
@@ -178,13 +210,6 @@
 		<xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]/researchViewY</xpath>
 		<value>
 			<researchViewY>6.3</researchViewY>
-		</value>
-	</li>
-
-	<li Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="Snek_Optics"]/label</xpath>
-		<value>
-			<label>Basic Optics</label>
 		</value>
 	</li>
 
@@ -231,7 +256,7 @@
 		<li Class="PatchOperationReplace">
 			<xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]/researchViewX</xpath>
 			<value>
-				<researchViewX>2</researchViewX>
+				<researchViewX>4</researchViewX>
 			</value>
 		</li>
 	
@@ -243,5 +268,342 @@
 		</li>
 	
 		</operations>
-		</Operation>
+	</Operation>
+
+	<!-- Heavy Auto turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]/prerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]</xpath>
+				<value>
+					<prerequisites>
+						<li>GunTurrets</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>CE_TurretHeavyWeapons</li>
+						<li>GasOperation</li>
+						<li>Snek_HighCaliber</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]/researchViewX</xpath>
+				<value>
+					<researchViewX>2</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<!-- Autocannon turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/prerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+				<value>
+					<prerequisites>
+						<li>CE_HeavyTurret</li>
+					</prerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>PrecisionRifling</li>
+						<li>MicroelectronicsBasics</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/researchViewX</xpath>
+				<value>
+					<researchViewX>3</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<!-- Uranium Slug turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/prerequisites</xpath>
+			</li>-->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>HeavyTurrets</li>
+						<li>MultiAnalyzer</li>
+					</prerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/hiddenPrerequisites</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>PrecisionRifling</li>
+					</hiddenPrerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/researchViewX</xpath>
+				<value>
+					<researchViewX>4</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+	<!-- Rocket Swarm turrets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/prerequisites</xpath>
+			</li>-->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>HeavyTurrets</li>
+						<li>MultiAnalyzer</li>
+					</prerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/hiddenPrerequisites</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>PrecisionRifling</li>
+					</hiddenPrerequisites>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/researchViewX</xpath>
+				<value>
+					<researchViewX>5</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+	<!-- Charge Blaster turrets | it doesnt like me changing its pre reqs so imma not -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!--<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/description</xpath>
+				<value>
+					<description>Create Firearms that are more advanced using more precise
+						techniques</description>
+				</value>
+			</li> 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/baseCost</xpath>
+				<value>
+					<baseCost>3000</baseCost>
+				</value>
+			</li> 
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/prerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/hiddenPrerequisites</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>HeavyTurrets</li>
+						<li>MultiAnalyzer</li>
+					</prerequisites>
+				</value>
+			</li> 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]</xpath>
+				<value>
+					<hiddenPrerequisites>
+						<li>ChargedShot</li>
+						<li>GunTurrets</li>
+					</hiddenPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/hiddenPrerequisites</xpath>
+				<value>
+					<li>ChargedShot</li>
+				</value>
+			</li> -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]</xpath>
+				<value>
+					<tab>Snek_ResearchTab_Weapons</tab>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/researchViewX</xpath>
+				<value>
+					<researchViewX>6</researchViewX>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.2</researchViewY>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
 </Patch>
