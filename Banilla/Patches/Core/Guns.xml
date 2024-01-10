@@ -27,6 +27,14 @@
                 </researchPrerequisite>
             </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Minigun"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>Snek_HeavyWeapons</li>
+                </researchPrerequisites>
+            </value>
+    </Operation>
 
     <!-- launchers -->
     <Operation Class="PatchOperationAdd">

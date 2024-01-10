@@ -199,7 +199,7 @@
 	<ResearchProjectDef>
 		<defName>Snek_Bakelite</defName>
 		<label>Bakelite framing</label>
-		<description>replace parts of guns with polymer/bakelite which are lower weight compared to wood/steel.</description>
+		<description>replace parts of guns with polymer/bakelite, which are lower weight compared to wood/steel.</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Snek_Polymer</li>
@@ -210,13 +210,13 @@
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger,RH2.Faction.Task.Force.141">
+	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger,RH2.Faction.Task.Force.141,CP.RimmuNation.2.Weapons,killerbot.gtekcombatextended">
 		<defName>Snek_AdvancedGunFurniture</defName>
 		<label>Advanced gun furniture</label>
 		<description>Create foregrips and other attachtments for use on firearms.</description>
 		<baseCost>750</baseCost>
 		<prerequisites>
-			<li>Snek_Polymer</li>
+			<li>Snek_Bakelite</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2</researchViewX>
@@ -269,7 +269,7 @@
 	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr">
 		<defName>Snek_Caseless</defName>
 		<label>Caseless ammunition</label>
-		<description>Craft weapons using caseless ammuniton which is lighter and cheaper.</description>
+		<description>Craft weapons using caseless ammuniton which is lighter and cheaper compared to cased rounds.</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
 			<li>PrecisionRifling</li>

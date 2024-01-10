@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HRK] RIM AT WAR - WW1 Winchester M97 "Trench Gun"</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- M97 "Trench Gun" -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_TrenchGunA"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- M97 "Trench Gun" Bayonet -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_TrenchGunB"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

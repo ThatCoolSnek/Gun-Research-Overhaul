@@ -5,7 +5,7 @@
 	<ResearchProjectDef>
 		<defName>Snek_Launchers</defName>
 		<label>Launchers</label>
-		<description>Create Various rocket and grande launchers</description>
+		<description>Create Various rocket and grenade launchers</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
 			<li>Gunsmithing</li>
@@ -16,7 +16,7 @@
 		<tab>Snek_ResearchTab_Weapons</tab>
 	</ResearchProjectDef>
     
-	<ResearchProjectDef MayRequireAnyOf="VanillaExpanded.VWEHW">
+	<ResearchProjectDef>
 		<defName>Snek_HeavyWeapons</defName>
 		<label>Heavy Weapons</label>
 		<description>Heavy guns that require some form of exoskeletons to be able to carry effectively</description>

@@ -189,45 +189,6 @@
             <li Class="PatchOperationRemove">
 				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_GunNut_Caseless"]</xpath>
 			</li>
-            <!-- patch the ammo to my research -->
-            <!-- 10x24 -->
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="MakeAmmo_10x24mmCaseless_FMJ"]/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
-                    </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="MakeAmmo_10x24mmCaseless_Incendiary"]/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
-                    </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="MakeAmmo_10x24mmCaseless_HE"]/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
-                    </value>
-            </li>
-            <!-- 10x28 -->
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="MakeAmmo_10x28mmCaseless_FMJ"]/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
-                    </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="MakeAmmo_10x28mmCaseless_Incendiary"]/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
-                    </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="MakeAmmo_10x28mmCaseless_HE"]/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite Inherit="False">Snek_Caseless</researchPrerequisite>
-                    </value>
-            </li>
         </operations>
     </match>
 </Operation>

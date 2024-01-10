@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HRK] RIM AT WAR - WW1 / WW2 French Weapons</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Lebel sniper -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_1886LebelSniper"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_1886LebelSniper"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_SimpleScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Berthier carbine -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M1916BerthierCarbine"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- RSC rifle -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_1917RSC"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Ribeyrolles SMG -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_1918Ribeyrolles"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- MAS-38 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_MAS38SMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Chauchat 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Chauchat"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_Chauchat"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_LMG</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Hotchkiss LMG -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_M1909Hotchkiss"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_M1909Hotchkiss"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- FM 24/29 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_FM2429LMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_FM2429LMG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_LMG</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>
