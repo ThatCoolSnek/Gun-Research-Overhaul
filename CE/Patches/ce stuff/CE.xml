@@ -29,5 +29,36 @@
                 <researchPrerequisites><li>Snek_MetallicCartridges</li></researchPrerequisites>
             </value>
     </Operation>
+    <!-- KPV -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Turret_KPV"]/researchPrerequisites</xpath>
+            <value>
+                <li>Snek_HighCaliber</li>
+                <li>Snek_AmmoBelts</li>
+            </value>
+    </Operation>
+    <!-- M240B -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Turret_M240B"]/researchPrerequisites</xpath>
+            <value>
+                <li>Snek_AmmoBelts</li>
+                <li>CE_TurretHeavyWeapons</li>
+            </value>
+    </Operation>
+    <!-- Turret_AGSThirty -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Turret_M240B"]/researchPrerequisites</xpath>
+            <value>
+                <li>Snek_AmmoBelts</li>
+            </value>
+    </Operation>
+    <!-- Flak cannon -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Turret_Flak"]/researchPrerequisites</xpath>
+            <value>
+                <li>Snek_HighCaliber</li>
+                <li>Mortars</li>
+            </value>
+    </Operation>
 
 </Patch>

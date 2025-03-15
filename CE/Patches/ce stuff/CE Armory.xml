@@ -219,8 +219,8 @@
                     </value>
             </li>
             <!-- MG338 -->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="CE_Gun_MGThreeThreeEight"]/recipeMaker</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_MGThreeThreeEight"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>CE_SimpleNV</li>
@@ -311,8 +311,8 @@
                     </value>
             </li>
             <!-- Taurus Judge -->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="CE_Gun_TaurusJudge"]</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_TaurusJudge"]/recipeMaker</xpath>
                 <value>
                     <recipeMaker>
                         <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
@@ -399,6 +399,36 @@
                             <li>Snek_AmmoBelts</li>
                             <li>GasOperation</li>
                         </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Mosque fal -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_MosqueFAL"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- boys rifle -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_BoysRifle"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_BoysRifle"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HighCaliber</li>
+                            <li>CE_TurretHeavyWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Madsen machien gun -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_MadsenLMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_LMG</researchPrerequisite>
                     </value>
             </li>
         </operations>

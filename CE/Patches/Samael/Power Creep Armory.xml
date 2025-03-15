@@ -5,6 +5,7 @@
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Power Creep Armory!</li>
+            <li>Paramount Combat Armaments</li>
 		</mods>
         <match Class="PatchOperationSequence">
         <operations>
@@ -150,7 +151,7 @@
             </li>
             <!-- MG 338 -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="PCA_Gun_MG338Tactical"]/recipeMaker/researchPrerequisites</xpath>
+                <xpath>Defs/ThingDef[defName="PCA_Gun_RM338Tactical"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>CE_SimpleNV</li>

@@ -26,12 +26,18 @@
             </li>
             <!-- RSh-12M -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="ma_rsh12m"]/recipeMaker/researchPrerequisite</xpath>
+                <xpath>Defs/ThingDef[defName="ma_rsh12m"]/researchPrerequisites</xpath>
                     <value>
-                        <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
+                        <researchPrerequisites Inherit="False">
+                            <li>Snek_DoubleAction</li>
+                            <li>Snek_AdvancedGunFurniture</li>
+                            <li>Snek_HighCaliber</li>
+                            <li>Snek_ModernScopes</li>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
                     </value>
             </li>
-            <li Class="PatchOperationAdd">
+            <!-- <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="ma_rsh12m"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
@@ -42,7 +48,7 @@
                             <li>CE_SimpleNV</li>
                         </researchPrerequisites>
                     </value>
-            </li>
+            </li> -->
             <!-- ASh-12 -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="ma_ash12"]/recipeMaker/researchPrerequisite</xpath>
@@ -60,41 +66,53 @@
                         </researchPrerequisites>
                     </value>
             </li>
-            <!-- ASh-12 Echo -->
+            <!-- ASh-12 Echo 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="ma_ash12gl"]/recipeMaker/researchPrerequisite</xpath>
+                <xpath>Defs/ThingDef[defName="ma_ash12gl"]/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
                     </value>
-            </li>
+            </li>-->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="ma_ash12gl"]/recipeMaker/researchPrerequisites</xpath>
+                <xpath>Defs/ThingDef[defName="ma_ash12gl"]/recipeMaker</xpath>
                     <value>
-                        <researchPrerequisites>
-                            <li>Snek_Bakelite</li>
-                            <li>Snek_HighCaliber</li>
-                            <li>Snek_ModernScopes</li>
-                            <li>CE_AdvancedNV</li>
-                            <li>CE_Launchers</li>
-                        </researchPrerequisites>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>PrecisionRifling</li>
+                                <li>Snek_Bakelite</li>
+                                <li>Snek_HighCaliber</li>
+                                <li>Snek_ModernScopes</li>
+                                <li>CE_AdvancedNV</li>
+                                <li>CE_Launchers</li>
+                            </researchPrerequisites>
+                            <skillRequirements>
+                                <Crafting>10</Crafting>
+                            </skillRequirements>
+                        </recipeMaker>
                     </value>
             </li>
-            <!-- VSK Vykhlop -->
+            <!-- VSK Vykhlop 
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="ma_vsk"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
                     </value>
-            </li>
+            </li>-->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="ma_vsk"]/recipeMaker/researchPrerequisites</xpath>
+                <xpath>Defs/ThingDef[defName="ma_vsk"]/recipeMaker</xpath>
                     <value>
-                        <researchPrerequisites>
-                            <li>Snek_ModernScopes</li>
-                            <li>CE_AdvancedNV</li>
-                            <li>Snek_Bakelite</li>
-                            <li>Snek_HighCaliber</li>
-                        </researchPrerequisites>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>PrecisionRifling</li>
+                                <li>Snek_ModernScopes</li>
+                                <li>CE_AdvancedNV</li>
+                                <li>Snek_Bakelite</li>
+                                <li>Snek_HighCaliber</li>
+                            </researchPrerequisites>
+                            <skillRequirements>
+                                <Crafting>10</Crafting>
+                            </skillRequirements>
+                        </recipeMaker>
                     </value>
             </li>
             <!-- MTs-558 -->

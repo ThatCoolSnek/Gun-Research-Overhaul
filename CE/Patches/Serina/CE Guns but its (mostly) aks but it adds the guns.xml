@@ -130,7 +130,7 @@
             </li>
             <!-- AK-74m -->
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="ak_dptwentyeight"]/recipeMaker</xpath>
+                <xpath>Defs/ThingDef[defName="ak_akseventyfourm"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Snek_Bakelite</li>

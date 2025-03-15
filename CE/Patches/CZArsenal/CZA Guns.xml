@@ -330,6 +330,20 @@
                         </researchPrerequisites>
                     </value>
             </li>
+            <!-- PPS-43M -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_PPS43M"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- PPSH-41 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_PPSH"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
             <!-- AO-64 -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="CE_Gun_KripAO64a"]/recipeMaker/researchPrerequisite</xpath>
@@ -601,7 +615,7 @@
                         </researchPrerequisites>
                     </value>
             </li>
-            <!-- AK-74M Zenitco -->
+            <!-- AK-74M -->
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74d"]/recipeMaker</xpath>
                     <value>
@@ -626,6 +640,22 @@
                         </researchPrerequisites>
                     </value>
             </li>
+            <!-- AK-74M Zenitco-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74c"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74c"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
             <!-- AKS-74u Zenitco -->
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="CE_Gun_KripAK74uZen"]/recipeMaker</xpath>
@@ -638,9 +668,24 @@
             </li>
             <!-- AKM-->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="CE_Gun_KripAKM"]/recipeMaker/researchPrerequisite</xpath>
+                <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- RPKS-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_RPKS"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_RPKS"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_LMG</li>
+                        </researchPrerequisites>
                     </value>
             </li>
             <!-- AKML "NSP-3"-->
@@ -717,6 +762,17 @@
                     <value>
                         <researchPrerequisites>
                             <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- RPD tactical -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Krip_RPDT"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                            <li>Snek_Bakelite</li>
+                            <li>CE_SimpleNV</li>
                         </researchPrerequisites>
                     </value>
             </li>
@@ -818,6 +874,204 @@
                             <li>BlowbackOperation</li>
                             <li>CE_TurretHeavyWeapons</li>
                             <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- S&W M3 russian -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_SWModel3Rus"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BreakAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- winchester 1895 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Win1895a"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- winchester 1895 saddle ring -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Win1895b"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- MTs-558 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_MTs558a"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_MTs558a"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- RSh-12 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Rsh-12a"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Rsh-12a"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- M1923 Thompson -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Krip_CE_Gun_M1923Thompson"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Škorpion -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_VZ61b"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- OTs-23 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_OTS23a"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- AK-80a -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_AK80a"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_AK80a"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_Launchers</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- AK-80b -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_AK80b"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_Launchers</li>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- AKMP -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_KripAKMS"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- RPL-20 -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_RPL-20a"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- ASh-12 -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Ash12a"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HighCaliber</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Groza -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_OTS14a"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_SimpleScopes</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Groza GL -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_OTS14a"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                    </value>
+            </li>
+            <!-- SHRIMP (sr-1mp) -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_SR1MP"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">BlowbackOperation</researchPrerequisite>
+                    </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_SR1MP"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Tulyak-11 -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_Tulyak"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- AK Drummer -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="CE_Gun_AK47a"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- OP-SKS -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_OPSKS"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- SR-2M -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_SR2M"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_Bakelite</li>
                         </researchPrerequisites>
                     </value>
             </li>

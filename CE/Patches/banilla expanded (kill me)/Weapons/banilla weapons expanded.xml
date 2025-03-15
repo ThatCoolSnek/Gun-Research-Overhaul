@@ -70,7 +70,7 @@
             </li>
             <!-- SMG (MP5K) -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VWE_Gun_LightSMG"]/recipeMaker/researchPrerequisite</xpath>
+                <xpath>Defs/ThingDef[defName="VWE_Gun_SMG"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
                     </value>

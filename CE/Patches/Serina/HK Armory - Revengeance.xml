@@ -169,6 +169,23 @@
                         </researchPrerequisites>
                     </value>
             </li>
+            <!-- CAWSM -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="amp_CAWS-Mshotgun"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="amp_CAWS-Mshotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_Shotguns</li>
+                            <li>CE_SimpleNV</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
             <!-- G11 -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="HK_G11gun"]/recipeMaker/researchPrerequisite</xpath>

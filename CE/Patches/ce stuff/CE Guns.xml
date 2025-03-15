@@ -64,6 +64,15 @@
                         <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
                     </value>
             </li>
+            <!-- AKMS-U -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CE_Gun_AKMSU"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
             <!-- SVD -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="CE_Gun_SVD"]/recipeMaker/researchPrerequisite</xpath>
@@ -98,7 +107,7 @@
             </li>
             <!-- PTRS 41 -->
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="CE_Gun_PTRS"]/recipeMaker/researchPrerequisite</xpath>
+                <xpath>Defs/ThingDef[defName="CE_Gun_PTRS"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Snek_HighCaliber</li>

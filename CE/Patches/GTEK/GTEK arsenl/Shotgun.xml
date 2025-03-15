@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GTek's Arsenal 2.0 - Ultimate Survival and Colony Defense</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Browning BSS -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_BrowningBSS"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BreakAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Stoeger Coach Gun -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_StoegerCoachGun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BreakAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Savage 42 Takedown -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_Savage42Takedown"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BreakAction</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_Savage42Takedown"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Mossberg 590A1 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_M590A1Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+                </li>   
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_M590A1Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Mossberg 590A1 Short -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_M590A1Short"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_M590A1Short"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Remington M870 Fieldmaster -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Remington M870 Tactical -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_Tactical"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_Tactical"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Remington M870 Home Defense -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_HomeDefense"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Remington Tac-14 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonTac14Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonTac14Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- SPAS-12 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_SPAS12Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Shotguns</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Remington SP-10 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonSP10Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Shotguns</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- M1014 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_M1014Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Shotguns</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Browning Auto-5 Hunter -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_BrowningA5Gun"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelfLoad</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_BrowningA5Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Shotguns</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Savage Renegauge Security -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_SA_RenSec"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Shotguns</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Savage 220 XP -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_Savage220XP"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_Savage220XP"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- REV410 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_REV410Sgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- AA-12 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_AA12Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_AA12Gun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_Shotguns</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
