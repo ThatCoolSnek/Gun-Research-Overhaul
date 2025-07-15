@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GTek's Arsenal 2.0 - Ultimate Survival and Colony Defense</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Marlin Model 336 -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_Marlin336Model"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_LeverAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Marlin Model 336 Dark -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_Marlin336Model_Dark"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_LeverAction</li>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Winchester Ranger -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_WinchesterRanger"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_LeverAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Winchester Ranger -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_SW1854_Traditional"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_LeverAction</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_SW1854_Traditional"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Marlin Model 336 Dark -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_SW1854_SF"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_LeverAction</li>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_Bakelite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

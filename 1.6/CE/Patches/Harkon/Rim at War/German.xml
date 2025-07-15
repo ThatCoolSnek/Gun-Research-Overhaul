@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HRK] RIM AT WAR - WW2 German Weapons</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- MP 40 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_MP40SMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- StG 44 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_StG44AR"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- FG 42 scoped -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_FG42LMGScoped"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SelectiveFire</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_FG42LMGScoped"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_SimpleScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Karabiner 98k rifle -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Karabiner98k"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Karabiner 98k sniper -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Karabiner98kSR"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Karabiner98kSR"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_SimpleScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Karabiner 98k rifle grenade -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Karabiner98kGL"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_Karabiner98kGL"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>CE_Launchers</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Gewehr 43 scoped -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_G43RifleScoped"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_G43RifleScoped"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_SimpleScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- MG 34 double drum 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_MG34LMGDoubleDrum"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False"></researchPrerequisite>
+                    </value>
+            </li> -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_MG34LMGDoubleDrum"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- MG 42 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_MG42LMG"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False"></researchPrerequisite>
+                    </value>
+            </li> -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_MG42LMG"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AmmoBelts</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Panzerbuchse 39 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Panzerbuchse39ATRifle"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">CE_Launchers</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Panzerschreck -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Panzerschreck"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">CE_Launchers</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Panzerfaust -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Panzerfaust"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">CE_Launchers</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- Flammenwerfer 41 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_FmW41Flamethrower"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_FlameThrowers</researchPrerequisite>
+                    </value>
+            </li>
+            <!-- remove scope research -->
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="HRK_Research_BasicScopes"]</xpath>
+			</li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>
