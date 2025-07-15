@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Custom Glock 20</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Automatic Glock 20 -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HRK_Glock20_Pistol_C"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_SMG</researchPrerequisite>
+                    </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_Glock20_Pistol_C"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_Lenses</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Deserters</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Kontarion -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFED_Turret_Kontarion"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>SniperTurret</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Palintone -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFED_Turret_Palintone"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>HeavyTurrets</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Onager -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFED_Turret_Onager"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>RocketswarmLauncher</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

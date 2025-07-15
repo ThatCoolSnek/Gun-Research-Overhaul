@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GTek's Arsenal 2.0 - Ultimate Survival and Colony Defense</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Springfield Model 2020 Waypoint -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_SpringfieldM2020W"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- L42A1 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_L42A1Enfield"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- US Arms Azrael PRS -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_AzraelPRS"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Howa Model 1500 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_HowaM1500_243Win"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Barrett MRAD -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_BarrettMRAD_338Lapua"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Savage 25 Walking Varminter -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_Savage25WalkingVarminter_Camo"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Remington M700 BDL -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonM700_BDL"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+                    </value>
+                </li>
+
+                <!-- Remington M700 CDL -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_RemingtonM700_CDL"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- SIG Cross -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_SIG_Cross"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                    </value>
+                </li>
+
+                <!-- Q The Fix -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_QTheFix"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Barrett M82A1 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_BarrettM82A1AMR"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Barrett M107A1 -->
+                <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HIDGun_BarrettM107A1AMR"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                            <li>CE_SimpleNV</li>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- AK-50 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_AK50AMR"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_Bakelite</li>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <!-- Serbu RN-50 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_SerbuRN50AMR"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_ModernScopes</li>
+                            <li>Snek_HighCaliber</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

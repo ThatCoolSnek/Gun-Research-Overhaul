@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Snek_DoubleAction</defName>
+		<label>Double action</label>
+		<description>An improved upon version of the single action mechanism allowing the hammer to be cocked and release with a single trigger pull usually used in revolvers.</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Gunsmithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_BreakAction</defName>
+		<label>Break action</label>
+		<description>A type of action when the gun "breaks" in half and cartridges or shells are loaded directly into the cylinder or barrel.</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Gunsmithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_PumpAction</defName>
+		<label>Pump action</label>
+		<description>A type of action where you manipulate the handguard and "pump" it back and forth to to eject a spent casing and then load in a new round.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>Gunsmithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_LeverAction</defName>
+		<label>Lever action</label>
+		<description>A type of action where you manipulate the trigger guard forward and back like a lever to eject and load a new round.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>Gunsmithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_BoltAction</defName>
+		<label>Bolt action</label>
+		<description>A type of action where you manipulate the bolt in order to cycle rounds from a magazine.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>Gunsmithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_HighCaliber</defName>
+		<label>High caliber</label>
+		<description>Learn how to handle the high pressures of high caliber rounds.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_SelfLoad</defName>
+		<label>Self loading and recoil operation</label>
+		<description>allows creation of firearms that use the recoil of the barrel to cycle the next round from a magazine.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>Snek_PumpAction</li>
+			<li>Snek_LeverAction</li>
+			<li>Snek_BoltAction</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_Shotguns</defName>
+		<label>Self loading shotguns</label>
+		<description>allows creation of shotguns that dont require manipulation of a bolt, pump, or other action to cycle rounds.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Snek_SelfLoad</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_SMG</defName>
+		<label>Sub machine guns</label>
+		<description>Allows creation of full auto firearms that use pistol calibers.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>BlowbackOperation</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_SelectiveFire</defName>
+		<label>Selective fire</label>
+		<description>Create firearms using intermidiate cartridges that have full auto and/or burst capabilities commonly refered to as "Assault Rifles" and "Battle Rifles".</description>
+		<baseCost>2000</baseCost>
+		<prerequisites>
+			<li>GasOperation</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>8</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_FlameThrowers</defName>
+		<label>Flame throwers</label>
+		<description>Create Firearms that spew flammable liquid that is ignited as it leaves the barrel.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Gunsmithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_LMG</defName>
+		<label>Light machine guns</label>
+		<description>Create light machine guns that can fire for prolonged periods of time without overheating or reloading.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Snek_SelfLoad</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_AmmoBelts</defName>
+		<label>Ammunition belts</label>
+		<description>connect a large amount of rounds together with cheap metal links into a "belt".</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Snek_LMG</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_Polymer</defName>
+		<label>Polymer</label>
+		<description>learn the about the creation of polymer for use in firearms (kinda just a techblock for now, eventually(tm) will have actual polymer to make guns with).</description>
+		<baseCost>100</baseCost>
+		<prerequisites>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_Bakelite</defName>
+		<label>Bakelite framing</label>
+		<description>replace parts of guns with polymer/bakelite, which are lower weight compared to wood/steel.</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Snek_Polymer</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.CORE,cgf1.gunsgalorecore,Harkon.STALKER.GaussRifle,Harkon.Other.SigMCX,Harkon.Other.BarretMRADGeisseleURGI,Harkon.Other.AACHoneyBadger,RH2.Faction.Task.Force.141,CP.RimmuNation.2.Weapons,killerbot.gtekcombatextended,killerbot.GTekV2Arsenal,mikohime.MASpecialCaliber">
+		<defName>Snek_AdvancedGunFurniture</defName>
+		<label>Advanced gun furniture</label>
+		<description>Create foregrips and other attachtments for use on firearms.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>Snek_Bakelite</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Snek_Lenses</defName>
+		<label>Lenses</label>
+		<description>learn how to make lenses for use in optical sights and targeting systems.</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_SimpleScopes</defName>
+		<label>Simple scopes</label>
+		<description>Create basic scopes for long range shooting.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Snek_Lenses</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_ModernScopes</defName>
+		<label>Modern scopes</label>
+		<description>Create modern scopes for long range shooting.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Snek_SimpleScopes</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef MayRequireAnyOf="Harkon.GunNut.Community,al9000.hkr,killerbot.GTekV2Arsenal">
+		<defName>Snek_Caseless</defName>
+		<label>Caseless ammunition</label>
+		<description>Craft weapons using caseless ammuniton which is lighter and cheaper compared to cased rounds.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>PrecisionRifling</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>9</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Snek_OpticalTargeting</defName>
+		<label>Optical targeting</label>
+		<description>Learn how to make optical targeting systems for use in automated weaponry like turrets.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Snek_Lenses</li>
+			<li>Electricity</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<tab>Snek_ResearchTab_Weapons</tab>
+	</ResearchProjectDef>
+
+</Defs>

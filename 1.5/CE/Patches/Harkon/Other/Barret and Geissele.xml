@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Barret MRAD and Geissele URGI</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <!-- Geissele URG-I -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_GeisseleURGI"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AdvancedGunFurniture</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+            <!-- Barret MRAD -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HRK_BarretMRAD"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Snek_AdvancedGunFurniture</li>
+                            <li>Snek_ModernScopes</li>
+                        </researchPrerequisites>
+                    </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

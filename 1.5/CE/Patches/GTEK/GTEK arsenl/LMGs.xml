@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GTek's Arsenal 2.0 - Ultimate Survival and Colony Defense</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Ohio Ordnance REAPR -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_REAPR"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                        <li>Snek_ModernScopes</li>
+                        <li>Snek_AmmoBelts</li>
+                    </value>
+                </li>
+
+                <!-- KAC LAMG -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_LAMG"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                        <li>Snek_AmmoBelts</li>
+                    </value>
+                </li>
+
+                <!-- FN Minimi 7.62 Mk3 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_FNMinimi762MkThree"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                        <li>Snek_AmmoBelts</li>
+                    </value>
+                </li>
+
+                <!-- XM8 LMG3 -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_XM8_LMG"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                        <li>Snek_LMG</li>
+                    </value>
+                </li>
+
+                <!-- M250 NGSW -->
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HIDGun_MTwoFifty_NGSW"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>Snek_Bakelite</li>
+                        <li>Snek_ModernScopes</li>
+                        <li>Snek_AmmoBelts</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Revolver"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">Snek_DoubleAction</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">Snek_BoltAction</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">Snek_PumpAction</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Minigun"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>CE_TurretHeavyWeapons</li>
+                </researchPrerequisites>
+            </value>
+    </Operation>
+    <!-- Charge Rifle -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisites Inherit="False"><li>CE_SimpleNV</li></researchPrerequisites>
+            </value>
+    </Operation>
+
+</Patch>
