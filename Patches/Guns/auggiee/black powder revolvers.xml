@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CE Black Powder revolvers</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+        <!-- decided to keep the researches and just add gunsmith prereq cuz they'd all just end up in 1 or 2 researches (im lazy)-->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="Stage1R_BP"]/prerequisites</xpath>
+                <value>
+                    <prerequisites Inherit="False">
+                        <li>Gunsmithing</li>
+                    </prerequisites>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="Stage1R_BP"]/baseCost</xpath>
+                <value>
+                    <baseCost>100</baseCost>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="Stage2R_BP"]/baseCost</xpath>
+                <value>
+                    <baseCost>200</baseCost>
+                </value>
+            </li>
+        </operations>
+        </match>
+    </Operation>
+    
+</Patch>

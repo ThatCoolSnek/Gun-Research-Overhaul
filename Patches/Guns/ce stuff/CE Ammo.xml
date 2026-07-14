@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <!-- Pre-industrial -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Round"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_BigBalls</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Bursting"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_BigBalls</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Incendiary"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_BigBalls</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Grape"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_BigBalls</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_MiniCannonBall_Round"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_BigBalls</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_MiniCannonBall_Grape"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_BigBalls</researchPrerequisite>
+            </value>
+    </Operation>
+    <!-- Spacer -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_LaserChargePack"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_LaserPack</researchPrerequisite>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_LaserChargePack_Mech"]</xpath>
+            <value>
+                <researchPrerequisite>Snek_LaserPack</researchPrerequisite>
+            </value>
+    </Operation>
+</Patch>

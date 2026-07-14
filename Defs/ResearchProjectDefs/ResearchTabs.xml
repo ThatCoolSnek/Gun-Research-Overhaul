@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<ResearchTabDef>
+		<defName>Snek_ResearchTab_Weapons</defName>
+		<label>Weapons Research</label>
+	</ResearchTabDef>
+
+</Defs>

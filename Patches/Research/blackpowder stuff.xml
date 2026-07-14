@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CE Black Powder Rifles (Manny edition)</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+		<li MayRequireAnyOf="CE.BlackPowderRifle" Class="PatchOperationReplace">
+
+		<xpath>Defs/ResearchProjectDef[defName="Snek_BreechLoadingone"]/baseCost</xpath>
+		<value>
+			<baseCost>150</baseCost>
+		</value>
+
+		</li>
+		<li MayRequireAnyOf="CE.BlackPowderRifle" Class="PatchOperationReplace">
+
+		<xpath>Defs/ResearchProjectDef[defName="Snek_BreechLoadingtwo"]/baseCost</xpath>
+		<value>
+			<baseCost>250</baseCost>
+		</value>
+    	</li>
+		</operations>
+		</match>
+		</Operation>
+
+</Patch>

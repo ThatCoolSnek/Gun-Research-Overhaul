@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Gun Research Overhaul</name>
+	<author>Snek</author>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3127431910</url>
+	<packageId>Snek.GunResearchOverhaul</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>
+	an overhaul to how guns are researched
+	</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>CETeam.CombatExtended</li>
+		<li>imranfish.xmlextensions</li>
+		<li>PeteTimesSix.ResearchReinvented.SteppingStones</li>
+		<li>Aoba.Fortress.Industrial</li>
+		<li>OskarPotocki.VFE.Insectoid</li>
+		<li>CE.Auggie2Bore</li>
+		<li>CE.BlackPowderRifle</li>
+		<li>CE.BlackPowderBonus</li>
+		<li>CE.AuggieBlackPowderGuns</li>
+		<li>CE.Kirp.RUGuns</li>
+	</loadAfter>
+	<loadBefore>
+	</loadBefore>
+</ModMetaData>

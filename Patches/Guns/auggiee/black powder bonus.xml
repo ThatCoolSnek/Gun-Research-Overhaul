@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CE 2-Bore</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+
+            <!-- Chambers rifle -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_AuggieEllisJenningsRifle"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Brown bess -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_BrownBessAugB"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Hand Cannon -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_HandCannon"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Postførerverge -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_MailGun"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Mannstoper Pistol -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_70Mannstopper"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- 2S Wheellock Pistol -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_WheellockPistolSup"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- fort gun -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_FortressMatchlock"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Arquebus -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Arquebus"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Kammer lader -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Kammerlader"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_BreechLoadingtwo</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+
+        </operations>
+        </match>
+    </Operation>
+    
+</Patch>

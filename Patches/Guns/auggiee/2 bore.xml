@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CE 2-Bore</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+
+            <!-- 2-Bore Musket -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_2BoreMusket"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- lil duce -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_LilDuce"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+
+        </operations>
+        </match>
+    </Operation>
+    
+</Patch>

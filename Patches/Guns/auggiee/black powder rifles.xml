@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CE Black Powder Rifles (Manny edition)</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+        <!-- ammo -->
+            <!-- 50 smith-->
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_50Smith_FMJ"]</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>CE_Gunpowder</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_50Smith_AP"]</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>CE_Gunpowder</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_50Smith_HP"]</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>CE_Gunpowder</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_WhitworthShell_Round"]</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_BigBalls</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_WhitworthShell_Bursting"]</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_BigBalls</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+        <!-- Muzzle Loading-->
+            <!-- 1861 -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_1861Rilfe"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- 1842 -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_1842Musket"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Petronel -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Petronel"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Plains -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_PlainsRifle"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Whitworth -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Whitworth"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Hand Mortor -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_PHandMortor"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Chambers rifle 
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_AuggieEllisJenningsRifle"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>-->
+            <!-- Doppelstutzen -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_DoppelstutzenAug"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Over/Under Flintlock Pistol -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_OverUnderFlintlockPistolAug"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Ax Gun 
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_FlintlockAxeGun"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>-->
+            <!-- Wall Gun -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_FlintlockWallGun"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_BigBalls</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Brown bess -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_BrownBessAug"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Wheellock -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Wheellock"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <!-- Wheellock Hand Mortor -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_WHandMortor"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisite>
+                </value>
+            </li>
+
+        <!-- Breech loading -->
+            <!-- Smith Carbine -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_SmithCarbine"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_SmithCarbine"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingone</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Mississippi -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Mississippi"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Mississippi"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingtwo</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Hall -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Hall"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Hall"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingtwo</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Harmonica -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Harmonica"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_Harmonica"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingone</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Belgium Wall Gun -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_BelWallGun"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_BelWallGun"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingtwo</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Kalthoff repeater -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_AuggieKalthoff"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_AuggieKalthoff"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingone</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Ferguson Rifle -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="CE_Gun_FergusonRifle"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite Inherit="False">
+                    </researchPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CE_Gun_FergusonRifle"]/recipeMaker</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BreechLoadingtwo</li>
+                        <li>Snek_PercussionCap</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+        <!-- emplacements -->
+            <!-- 12 Pounder Cannon -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Turret_TwelvePounderWhit"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_BigBalls</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+            <!-- Chambers Gun -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Turret_ChambersGun"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>Snek_MuzzleLoading</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+
+        </operations>
+        </match>
+    </Operation>
+    
+</Patch>
